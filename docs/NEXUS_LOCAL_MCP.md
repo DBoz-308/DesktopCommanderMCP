@@ -1,6 +1,6 @@
 # Nexus Local MCP Integration
 
-Status: planning baseline  
+Status: generic local deployment and protocol smoke implemented; Desktop client recovery pending
 Scope: local developer machine integration around Desktop Commander MCP
 
 ## Purpose
@@ -224,3 +224,7 @@ This fork should not become:
 - a repository graph database.
 
 Those concerns belong to their existing systems.
+
+## Local cutover operations
+
+Use [LOCAL_STDIO_OPERATIONS.md](LOCAL_STDIO_OPERATIONS.md) for persistent build, stable tmux helpers, standalone MCP smoke, and preserved cloud recovery. [LOCAL_DEPENDENCY_AUDIT.md](LOCAL_DEPENDENCY_AUDIT.md) and docs/evidence preserve the dependency follow-up. End-to-end Desktop client acceptance must be evidenced separately from standalone stdio tests.
