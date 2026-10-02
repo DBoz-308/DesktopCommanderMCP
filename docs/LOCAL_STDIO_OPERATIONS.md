@@ -44,7 +44,7 @@ It checks config, 26 tools, create/read/edit/list/delete in a unique `/tmp` dire
 
 The standalone client is independent local MCP proof. It does **not** establish that a particular ChatGPT conversation exposes local tools. For client acceptance, verify the actual ChatGPT app-server children and make local tool calls from the intended local conversation; a cloud Work Mode conversation can expose only cloud connectors even with correct laptop config.
 
-Only after local client acceptance disable the registered cloud device service:
+After independent local stdio acceptance, disable the registered cloud device service. Keep any remaining Desktop-conversation acceptance gap explicit:
 
 ```bash
 systemctl --user disable --now desktop-commander-remote.service

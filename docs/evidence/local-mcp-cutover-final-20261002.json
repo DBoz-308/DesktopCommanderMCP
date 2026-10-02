@@ -1,0 +1,76 @@
+{
+  "started": "2026-10-02T06:38:22.564480+00:00",
+  "execution": "local deterministic cutover job in workspace-tools-2",
+  "implementationCommit": "10375496873464dca6de0fa7ce887d2c6d505425",
+  "branch": "nexus/local-mcp-integration-plan",
+  "pr": "https://github.com/DBoz-308/DesktopCommanderMCP/pull/1",
+  "auditFollowup": "https://github.com/DBoz-308/DesktopCommanderMCP/blob/nexus/local-mcp-integration-plan/docs/work-packages/dependency-audit-20261002.md",
+  "errors": [
+    "GUI display environment unavailable"
+  ],
+  "currentConversationLocalToolsExposed": false,
+  "currentConversationTransport": "cloud Work Mode; remote connector used only for bootstrap",
+  "recoveryCommand": "systemctl --user enable --now desktop-commander-remote.service",
+  "stewardBase": "0132a429f55f250babc3711adf7ae7a3bd2d9e3f",
+  "finalSmoke": {
+    "client": "standalone-local-stdio-smoke",
+    "started": "2026-10-02T06:38:23.703Z",
+    "checks": [
+      {
+        "name": "desktop_commander_tools",
+        "passed": true,
+        "count": 26
+      },
+      {
+        "name": "config_read",
+        "passed": true
+      }
+    ],
+    "desktopCommander": {
+      "command": "/usr/bin/node",
+      "args": [
+        "/home/dan/code/tools/desktop-commander-mcp/dist/index.js"
+      ],
+      "tools": [
+        "get_config",
+        "set_config_value",
+        "read_file",
+        "read_multiple_files",
+        "write_file",
+        "write_pdf",
+        "create_directory",
+        "list_directory",
+        "move_file",
+        "start_search",
+        "get_more_search_results",
+        "stop_search",
+        "list_searches",
+        "get_file_info",
+        "edit_block",
+        "start_process",
+        "read_process_output",
+        "interact_with_process",
+        "force_terminate",
+        "list_sessions",
+        "list_processes",
+        "kill_process",
+        "get_usage_stats",
+        "get_recent_tool_calls",
+        "give_feedback_to_desktop_commander",
+        "get_prompts"
+      ]
+    },
+    "error": "AssertionError [ERR_ASSERTION]: Process started with PID 485483 (shell: /bin/bash)\nInitial output:\nTraceback (most recent call last):\n  File \"<string>\", line 1, in <module>\nAssertionError: enabled\n\n\u2705 Process 485483 has finished execution",
+    "passed": false,
+    "finished": "2026-10-02T06:38:25.235Z",
+    "processExitCode": 1
+  },
+  "finished": "2026-10-02T06:38:25.241774+00:00",
+  "result": "BLOCKED_WITH_EVIDENCE",
+  "remainingGaps": [
+    "This controlling cloud Work Mode conversation does not expose laptop stdio MCP tools.",
+    "Prove local Desktop Commander and Hermes calls from a locally executed ChatGPT Desktop conversation after restart.",
+    "The restarted Desktop app did not spawn both expected local MCP children during the 30-second observation window.",
+    "Cloud-disabled final local MCP smoke did not pass; inspect the recorded error."
+  ]
+}
