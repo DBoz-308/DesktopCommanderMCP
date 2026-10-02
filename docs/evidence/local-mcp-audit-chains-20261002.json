@@ -1,0 +1,298 @@
+{
+  "basic-ftp": [
+    {
+      "name": "basic-ftp",
+      "version": "5.1.0",
+      "location": "node_modules/basic-ftp",
+      "isWorkspace": false,
+      "dependents": [
+        {
+          "type": "prod",
+          "name": "basic-ftp",
+          "spec": "^5.0.2",
+          "from": {
+            "name": "get-uri",
+            "version": "6.0.5",
+            "location": "node_modules/get-uri",
+            "isWorkspace": false,
+            "dependents": [
+              {
+                "type": "prod",
+                "name": "get-uri",
+                "spec": "^6.0.1",
+                "from": {
+                  "name": "pac-proxy-agent",
+                  "version": "7.2.0",
+                  "location": "node_modules/pac-proxy-agent",
+                  "isWorkspace": false,
+                  "dependents": [
+                    {
+                      "type": "prod",
+                      "name": "pac-proxy-agent",
+                      "spec": "^7.1.0",
+                      "from": {
+                        "name": "proxy-agent",
+                        "version": "6.5.0",
+                        "location": "node_modules/proxy-agent",
+                        "isWorkspace": false,
+                        "dependents": [
+                          {
+                            "type": "prod",
+                            "name": "proxy-agent",
+                            "spec": "^6.5.0",
+                            "from": {
+                              "name": "@puppeteer/browsers",
+                              "version": "2.11.0",
+                              "location": "node_modules/@puppeteer/browsers",
+                              "isWorkspace": false,
+                              "dependents": [
+                                {
+                                  "type": "prod",
+                                  "name": "@puppeteer/browsers",
+                                  "spec": "2.11.0",
+                                  "from": {
+                                    "name": "puppeteer",
+                                    "version": "24.34.0",
+                                    "location": "node_modules/puppeteer",
+                                    "isWorkspace": false,
+                                    "dependents": [
+                                      {
+                                        "type": "prod",
+                                        "name": "puppeteer",
+                                        "spec": ">=8.0.0",
+                                        "from": {
+                                          "name": "md-to-pdf",
+                                          "version": "5.2.5",
+                                          "location": "node_modules/md-to-pdf",
+                                          "isWorkspace": false,
+                                          "dependents": [
+                                            {
+                                              "type": "prod",
+                                              "name": "md-to-pdf",
+                                              "spec": "^5.2.5",
+                                              "from": {
+                                                "location": "/home/dan/code/tools/desktop-commander-mcp"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      }
+                                    ]
+                                  }
+                                },
+                                {
+                                  "type": "prod",
+                                  "name": "@puppeteer/browsers",
+                                  "spec": "2.11.0",
+                                  "from": {
+                                    "name": "puppeteer-core",
+                                    "version": "24.34.0",
+                                    "location": "node_modules/puppeteer-core",
+                                    "isWorkspace": false,
+                                    "dependents": [
+                                      {
+                                        "type": "prod",
+                                        "name": "puppeteer-core",
+                                        "spec": "24.34.0",
+                                        "from": {
+                                          "name": "puppeteer",
+                                          "version": "24.34.0",
+                                          "location": "node_modules/puppeteer",
+                                          "isWorkspace": false,
+                                          "dependents": [
+                                            {
+                                              "type": "prod",
+                                              "name": "puppeteer",
+                                              "spec": ">=8.0.0",
+                                              "from": {
+                                                "name": "md-to-pdf",
+                                                "version": "5.2.5",
+                                                "location": "node_modules/md-to-pdf",
+                                                "isWorkspace": false,
+                                                "dependents": [
+                                                  {
+                                                    "type": "prod",
+                                                    "name": "md-to-pdf",
+                                                    "spec": "^5.2.5",
+                                                    "from": {
+                                                      "location": "/home/dan/code/tools/desktop-commander-mcp"
+                                                    }
+                                                  }
+                                                ]
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      }
+                                    ]
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "dev": false,
+      "optional": false,
+      "devOptional": false,
+      "peer": false,
+      "bundled": false,
+      "overridden": false
+    }
+  ],
+  "decompress": [
+    {
+      "name": "decompress",
+      "version": "4.2.1",
+      "location": "node_modules/decompress",
+      "isWorkspace": false,
+      "dependents": [
+        {
+          "type": "prod",
+          "name": "decompress",
+          "spec": "^4.2.1",
+          "from": {
+            "name": "download",
+            "version": "8.0.0",
+            "location": "node_modules/download",
+            "isWorkspace": false,
+            "dependents": [
+              {
+                "type": "prod",
+                "name": "download",
+                "spec": "^8.0.0",
+                "from": {
+                  "name": "nexe",
+                  "version": "5.0.0-beta.4",
+                  "location": "node_modules/nexe",
+                  "isWorkspace": false,
+                  "dependents": [
+                    {
+                      "type": "dev",
+                      "name": "nexe",
+                      "spec": "^5.0.0-beta.4",
+                      "from": {
+                        "location": "/home/dan/code/tools/desktop-commander-mcp"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "dev": true,
+      "optional": false,
+      "devOptional": true,
+      "peer": false,
+      "bundled": false,
+      "overridden": false
+    }
+  ],
+  "tar": [
+    {
+      "name": "tar",
+      "version": "6.2.1",
+      "location": "node_modules/tar",
+      "isWorkspace": false,
+      "dependents": [
+        {
+          "type": "prod",
+          "name": "tar",
+          "spec": "^6.1.11",
+          "from": {
+            "name": "@mapbox/node-pre-gyp",
+            "version": "1.0.11",
+            "location": "node_modules/@mapbox/node-pre-gyp",
+            "isWorkspace": false,
+            "dependents": [
+              {
+                "type": "prod",
+                "name": "@mapbox/node-pre-gyp",
+                "spec": "^1.0.0",
+                "from": {
+                  "name": "canvas",
+                  "version": "2.11.2",
+                  "location": "node_modules/canvas",
+                  "isWorkspace": false,
+                  "dependents": [
+                    {
+                      "type": "optional",
+                      "name": "canvas",
+                      "spec": "^2.11.2",
+                      "from": {
+                        "name": "unpdf",
+                        "version": "0.12.2",
+                        "location": "node_modules/@opendocsg/pdf2md/node_modules/unpdf",
+                        "isWorkspace": false,
+                        "dependents": [
+                          {
+                            "type": "prod",
+                            "name": "unpdf",
+                            "spec": "^0.12.1",
+                            "from": {
+                              "name": "@opendocsg/pdf2md",
+                              "version": "0.2.2",
+                              "location": "node_modules/@opendocsg/pdf2md",
+                              "isWorkspace": false,
+                              "dependents": [
+                                {
+                                  "type": "prod",
+                                  "name": "@opendocsg/pdf2md",
+                                  "spec": "^0.2.2",
+                                  "from": {
+                                    "location": "/home/dan/code/tools/desktop-commander-mcp"
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "peerOptional",
+                      "name": "canvas",
+                      "spec": "^2.11.2",
+                      "from": {
+                        "name": "jsdom",
+                        "version": "24.1.3",
+                        "location": "node_modules/jsdom",
+                        "isWorkspace": false,
+                        "dependents": [
+                          {
+                            "type": "dev",
+                            "name": "jsdom",
+                            "spec": "^24.1.3",
+                            "from": {
+                              "location": "/home/dan/code/tools/desktop-commander-mcp"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "dev": false,
+      "optional": true,
+      "devOptional": true,
+      "peer": false,
+      "bundled": false,
+      "overridden": false
+    }
+  ]
+}

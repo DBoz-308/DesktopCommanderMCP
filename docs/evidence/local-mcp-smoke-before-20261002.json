@@ -1,0 +1,102 @@
+{
+  "client": "standalone-local-stdio-smoke",
+  "started": "2026-10-02T06:25:17.855Z",
+  "checks": [
+    {
+      "name": "desktop_commander_tools",
+      "passed": true,
+      "count": 26
+    },
+    {
+      "name": "config_read",
+      "passed": true
+    },
+    {
+      "name": "filesystem_create_read_edit_list",
+      "passed": true
+    },
+    {
+      "name": "content_search",
+      "passed": true
+    },
+    {
+      "name": "process_execution_and_output",
+      "passed": true
+    },
+    {
+      "name": "tmux_discover_capture",
+      "passed": true,
+      "workspace": "workspace-nexus"
+    },
+    {
+      "name": "tmux_send_and_capture",
+      "passed": true,
+      "workspace": "workspace-nexus",
+      "marker": "LOCAL_TMUX_EXECUTED_843c1ab93c99467f8666863d8b156dd2"
+    },
+    {
+      "name": "hermes_tools_and_read_call",
+      "passed": true,
+      "count": 10
+    },
+    {
+      "name": "tmp_cleanup",
+      "passed": true
+    }
+  ],
+  "desktopCommander": {
+    "command": "/usr/bin/node",
+    "args": [
+      "/home/dan/code/tools/desktop-commander-mcp/dist/index.js"
+    ],
+    "tools": [
+      "get_config",
+      "set_config_value",
+      "read_file",
+      "read_multiple_files",
+      "write_file",
+      "write_pdf",
+      "create_directory",
+      "list_directory",
+      "move_file",
+      "start_search",
+      "get_more_search_results",
+      "stop_search",
+      "list_searches",
+      "get_file_info",
+      "edit_block",
+      "start_process",
+      "read_process_output",
+      "interact_with_process",
+      "force_terminate",
+      "list_sessions",
+      "list_processes",
+      "kill_process",
+      "get_usage_stats",
+      "get_recent_tool_calls",
+      "give_feedback_to_desktop_commander",
+      "get_prompts"
+    ]
+  },
+  "hermes": {
+    "command": "/home/dan/.local/bin/hermes",
+    "args": [
+      "mcp",
+      "serve"
+    ],
+    "tools": [
+      "conversations_list",
+      "conversation_get",
+      "messages_read",
+      "attachments_fetch",
+      "events_poll",
+      "events_wait",
+      "messages_send",
+      "channels_list",
+      "permissions_list_open",
+      "permissions_respond"
+    ]
+  },
+  "passed": true,
+  "finished": "2026-10-02T06:25:24.762Z"
+}
